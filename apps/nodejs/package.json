@@ -1,13 +1,17 @@
 {
   "name": "clo835-assignment2",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "description": "CLO835 Assignment 2 starter — hello-world web app",
   "main": "server.js",
   "scripts": {
+    "build": "node --check server.js",
     "start": "node server.js"
   },
   "engines": {
-    "node": ">=26"
+    "node": "26"
+  },
+  "volta": {
+    "node": "26.3.0"
   }
 }

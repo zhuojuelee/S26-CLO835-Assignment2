@@ -3,14 +3,14 @@
 //   "Hello world from the CLO835 class and <YOUR_STUDENT_ID>!"
 // (replace <YOUR_STUDENT_ID> with your own Seneca student ID, e.g. 10112233)
 const http = require("http");
+const { version: VERSION } = require("./package.json");
 
-const VERSION = "0.2";
 const MESSAGE = "Hello world from the CLO835 class!";
 const PORT = 8080;
 
 http
   .createServer((req, res) => {
-    if (req.url === "/healthz" || req.url === "/readyz") {
+    if (req.url === "/health" || req.url === "/ready") {
       res.writeHead(200);
       return res.end("ok");
     }
