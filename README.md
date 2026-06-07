@@ -1,3 +1,12 @@
+# Summer 2026 CLO835 (Portable Technologies in Cloud) Assignment 2
+
+Setup commands and all steps executed in the assignment can be found in [`docs/commands.md`](docs/commands.md).
+
+---
+
+> [!NOTE]
+> Below are instructions from forking the repo: https://github.com/sojoudian/CLO835_summer2026_assignment2
+
 # CLO835 — Assignment 2 starter
 
 Starter applications for **CLO835 Assignment 2: Automate the build with GitHub Actions and deploy a versioned application to Kubernetes.**
@@ -12,9 +21,9 @@ This builds on **Assignment 1** → https://github.com/sojoudian/CLO835_summer20
 
 A simple web service that returns one text message on **port 8080**, deployed to your **kind** Kubernetes cluster through an automated pipeline. You ship **two versions**:
 
-| Version | The app returns |
-|---|---|
-| **0.2** | `Hello world from the CLO835 class!` |
+| Version | The app returns                                   |
+| ------- | ------------------------------------------------- |
+| **0.2** | `Hello world from the CLO835 class!`              |
 | **0.3** | `Hello world from the CLO835 class and 10112233!` |
 
 `10112233` must be **your own Seneca student ID**. Everyone's running app is unique.
@@ -23,14 +32,14 @@ A simple web service that returns one text message on **port 8080**, deployed to
 
 Programming is **not** the focus of this course — you may use AI tools to help. Choose any **one** of these (a ready starter for each is in [`apps/`](apps/)):
 
-| Language | Folder | Run locally |
-|---|---|---|
-| Python 3.14 | [`apps/python`](apps/python) | `python3 app.py` |
-| Go 1.26 | [`apps/go`](apps/go) | `go run main.go` |
-| Rust 1.96 | [`apps/rust`](apps/rust) | `cargo run` |
-| Java 26 | [`apps/java`](apps/java) | `java Main.java` |
-| C# 14 (.NET 10) | [`apps/csharp`](apps/csharp) | `dotnet run` |
-| Node.js v26 | [`apps/nodejs`](apps/nodejs) | `node server.js` |
+| Language        | Folder                       | Run locally      |
+| --------------- | ---------------------------- | ---------------- |
+| Python 3.14     | [`apps/python`](apps/python) | `python3 app.py` |
+| Go 1.26         | [`apps/go`](apps/go)         | `go run main.go` |
+| Rust 1.96       | [`apps/rust`](apps/rust)     | `cargo run`      |
+| Java 26         | [`apps/java`](apps/java)     | `java Main.java` |
+| C# 14 (.NET 10) | [`apps/csharp`](apps/csharp) | `dotnet run`     |
+| Node.js v26     | [`apps/nodejs`](apps/nodejs) | `node server.js` |
 
 Then check it: `curl http://localhost:8080` → `Hello world from the CLO835 class!`
 
