@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: nodejs-app
-          image: # TODO  e.g. zjlianlee/clo835-assignment2:0.2
+          image: zjlianlee/clo835-assignment2:0.2.1
           ports:
             - containerPort: 8080
