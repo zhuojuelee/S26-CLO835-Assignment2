@@ -5,7 +5,7 @@
 const http = require("http");
 const { version: VERSION } = require("./package.json");
 
-const MESSAGE = "Hello world from the CLO835 class!";
+const MESSAGE = "Hello world from the CLO835 class and 109920256!";
 const PORT = 8080;
 
 http
