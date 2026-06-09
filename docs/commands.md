@@ -131,3 +131,31 @@ kubectl rollout status deployment/clo835-assignment2
 kubectl get rs,pods -l app=clo835-assignment2 -o wide
 curl http://<your-ec2-public-ip>:30080
 ```
+
+## Bonus: readiness, resource limits, and self-healing
+
+Verify the Deployment has readiness/liveness probes and resource requests/limits:
+
+```bash
+kubectl describe deployment clo835-assignment2
+kubectl describe pod <pod-name>
+```
+
+Show the current pods:
+
+```bash
+kubectl get pods -l app=clo835-assignment2 -o wide
+```
+
+Delete one pod to demonstrate self-healing:
+
+```bash
+kubectl delete pod <pod-name>
+```
+
+Watch Kubernetes create a replacement pod and return to 3 ready replicas:
+
+```bash
+kubectl get pods -l app=clo835-assignment2 -w
+kubectl get deployment clo835-assignment2
+```
