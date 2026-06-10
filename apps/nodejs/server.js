@@ -14,6 +14,10 @@ http
       res.writeHead(200);
       return res.end("ok");
     }
+    if (req.url === "/version") {
+      res.writeHead(200);
+      return res.end(VERSION);
+    }
     res.writeHead(200, { "Content-Type": "text/plain" });
     res.end(MESSAGE + "\n");
   })
